@@ -1,2 +1,4 @@
 # Bioinformatica_estructural
-prueba1
+Paola Cornejo 
+Sarai Reyes
+Licenciatura en Ciencias Genomicas
