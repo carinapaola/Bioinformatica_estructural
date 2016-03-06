@@ -1,4 +1,4 @@
 # Bioinformatica Estructural
 Paola Cornejo,
 Sarai Reyes 
-##Licenciatura en Ciencias Genomicas 
+###Licenciatura en Ciencias Genomicas 
