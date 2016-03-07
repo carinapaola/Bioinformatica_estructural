@@ -197,7 +197,12 @@ sub duplex_deltaG{
 	if(!defined($NNparams{$nt})){ $nt = complement($nt); }
 	$total_dG += ((1000*$NNparams{$nt}{'H'})-($tK*$NNparams{$nt}{'S'}))/1000;		
 	#symetry correction
-	if(!($seq cmp (reverse(complement($seq))))){
-		$total_dG+=$NNparams{'sym'}{'H'};
-		$total_dG+=$NNparams{'sym'}{'S'};}
+	while ($inicio<7&&$final>7){
+		$temporal=$sequence[$final];
+		if($sequence[$inicio] ne complement($temporal)){
+			$sim=0;}
+		$inicio++;
+		$final--;
+		}
+	if($sim==1){$total_dG+=((1000*$NNparams{'sym'}{'H'})-($tK*$NNparams{'sym'}{'S'}))/1000;}
 	return $total_dG;}
